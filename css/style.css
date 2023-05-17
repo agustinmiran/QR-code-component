@@ -1,0 +1,120 @@
+:root {
+    /* Variables */
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --tamaño: 15px;
+    --family: 'Outfit', sans-serif;
+    --fontwe400: 400;
+    --fontwet700: 700;
+}
+
+@media (max-width: 375px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .2s;
+    }
+
+    .gr-white {
+        width: 300px !important;
+    }
+
+    .gr-img {
+        width: 100% !important;
+    }
+
+    .gr-img img {
+        width: 270px !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .2s;
+    }
+
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: var(--light-gray);
+    }
+
+    .gr-white {
+        width: 320px;
+        height: 480px;
+        display: grid;
+        background-color: var(--white-color);
+        border-radius: 20px;
+        animation: animacion .5s ease-in-out forwards;
+    }
+
+    @keyframes animacion {
+        from {
+            opacity: 0;
+            transform: translateY(-10%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    .gr-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gr-img img {
+        width: 290px;
+        height: 280px;
+        border-radius: 10px;
+    }
+
+    .paragraph-700 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .paragraph-700 p {
+        width: 280px;
+        display: block;
+        text-align: center;
+        font-family: var(--family);
+        font-weight: var(--fontwet700);
+        font-size: 1.4rem;
+        height: 100%;
+        color: var(--dark-blue);
+    }
+
+    .paragraph-400 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragraph-400 p {
+        width: 265px;
+        display: block;
+        text-align: center;
+        font-size: var(--tamaño);
+        font-family: var(--family);
+        font-weight: var(--fontwe400);
+        height: 100%;
+        color: var(--grayish-blue);
+    }
+
+}
