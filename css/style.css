@@ -10,6 +10,7 @@
     --fontwet700: 700;
 }
 
+/* Media Querys */
 @media (max-width: 375px) {
     * {
         margin: 0;
